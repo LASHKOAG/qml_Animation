@@ -69,12 +69,15 @@ Window {
         id: rect
         width: 100; height: 100
         color: "red"
+        //NumberAnimation on x { to: 50; duration: 1000 }  //для примера
 
         MouseArea{
             id: ma
             anchors.fill: parent
-            onClicked: sa_red.running = true
+            //onClicked: sa_red.running = true
+            onClicked: sa_red.start()
         }
     }
 }
+
 
